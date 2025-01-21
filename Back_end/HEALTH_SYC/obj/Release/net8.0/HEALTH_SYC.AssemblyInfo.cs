@@ -12,9 +12,9 @@ using System;
 using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("HEALTH_SYC")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e6ee6ca53c17b41afdcec9c5aa19c65553bd8678")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+716aa72bfc3b1ee55daadca71de92760826d0884")]
 [assembly: System.Reflection.AssemblyProductAttribute("HEALTH_SYC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HEALTH_SYC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

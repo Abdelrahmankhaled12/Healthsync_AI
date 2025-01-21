@@ -240,6 +240,29 @@ namespace HEALTH_SYC.Controllers
             }
             return Ok(list);
         }
+        [HttpGet("GetAllPatients")]
+        public async Task<IActionResult> GetAllPatients()
+        {
+            var patients = await _db.Patients.ToListAsync();
+
+            var list = new List<PatientDto>();
+
+            foreach (var patient in patients)
+            {
+
+                PatientDto patientDto = new PatientDto()
+                {
+                    Id = patient.Id,
+                    Name = patient.Name,
+                    age = patient.Age,
+                    Adress  = patient.Adress,
+                    Phone = patient.Phone,
+                };
+                list.Add(patientDto);
+
+            }
+            return Ok(list);
+        }
 
     }
 }

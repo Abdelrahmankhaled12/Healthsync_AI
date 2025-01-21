@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|C:\\GP\\HEALTH_SYC_AI\\Back_end\\HEALTH_SYC\\dtos\\specialtydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|solutionrelative:dtos\\specialtydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|c:\\gp\\health_syc_ai\\back_end\\health_syc\\dtos\\patientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|solutionrelative:dtos\\patientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|C:\\GP\\HEALTH_SYC_AI\\Back_end\\HEALTH_SYC\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|solutionrelative:models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|c:\\gp\\health_syc_ai\\back_end\\health_syc\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|solutionrelative:models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,26 +35,28 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Department.cs",
-              "DocumentMoniker": "C:\\GP\\HEALTH_SYC_AI\\Back_end\\HEALTH_SYC\\Models\\Department.cs",
-              "RelativeDocumentMoniker": "Models\\Department.cs",
-              "ToolTip": "C:\\GP\\HEALTH_SYC_AI\\Back_end\\HEALTH_SYC\\Models\\Department.cs",
-              "RelativeToolTip": "Models\\Department.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAkAAAA",
+              "Title": "Patient.cs",
+              "DocumentMoniker": "C:\\GP\\HEALTH_SYC_AI\\Back_end\\HEALTH_SYC\\Models\\Patient.cs",
+              "RelativeDocumentMoniker": "Models\\Patient.cs",
+              "ToolTip": "C:\\GP\\HEALTH_SYC_AI\\Back_end\\HEALTH_SYC\\Models\\Patient.cs",
+              "RelativeToolTip": "Models\\Patient.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T20:37:01.011Z"
+              "WhenOpened": "2025-01-21T21:50:31.801Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "SpecialtyDto.cs",
-              "DocumentMoniker": "C:\\GP\\HEALTH_SYC_AI\\Back_end\\HEALTH_SYC\\DTOs\\SpecialtyDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\SpecialtyDto.cs",
-              "ToolTip": "C:\\GP\\HEALTH_SYC_AI\\Back_end\\HEALTH_SYC\\DTOs\\SpecialtyDto.cs",
-              "RelativeToolTip": "DTOs\\SpecialtyDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAjAAAA",
+              "Title": "PatientDto.cs",
+              "DocumentMoniker": "C:\\GP\\HEALTH_SYC_AI\\Back_end\\HEALTH_SYC\\DTOs\\PatientDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\PatientDto.cs",
+              "ToolTip": "C:\\GP\\HEALTH_SYC_AI\\Back_end\\HEALTH_SYC\\DTOs\\PatientDto.cs",
+              "RelativeToolTip": "DTOs\\PatientDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T20:36:21.053Z"
+              "WhenOpened": "2025-01-21T21:49:56.73Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -64,7 +66,7 @@
               "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
               "ToolTip": "C:\\GP\\HEALTH_SYC_AI\\Back_end\\HEALTH_SYC\\Controllers\\AdminController.cs",
               "RelativeToolTip": "Controllers\\AdminController.cs",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAuwEoAAAANAAAA",
+              "ViewState": "AQIAAPEAAAAALfJAc/cowAwBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-19T18:48:37.263Z",
               "EditorCaption": ""
