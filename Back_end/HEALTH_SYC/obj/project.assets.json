@@ -4514,11 +4514,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\GP\\HEALTH_SYC\\HEALTH_SYC.csproj",
+      "projectUniqueName": "C:\\GP\\HEALTH_SYC_AI\\Back_end\\HEALTH_SYC\\HEALTH_SYC.csproj",
       "projectName": "HEALTH_SYC",
-      "projectPath": "C:\\GP\\HEALTH_SYC\\HEALTH_SYC.csproj",
+      "projectPath": "C:\\GP\\HEALTH_SYC_AI\\Back_end\\HEALTH_SYC\\HEALTH_SYC.csproj",
       "packagesPath": "C:\\Users\\h\\.nuget\\packages\\",
-      "outputPath": "C:\\GP\\HEALTH_SYC\\obj\\",
+      "outputPath": "C:\\GP\\HEALTH_SYC_AI\\Back_end\\HEALTH_SYC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -104,6 +104,19 @@ namespace HEALTH_SYC.Controllers
             return Ok(new { Message = "new region created successfully", Id = reg.Id });
         }
 
+        [HttpPost("AddSpecialty")]
+        public async Task<IActionResult> AddSpecialty(SpecialtyDto specialtyDto)
+        {
+            Department department = new()
+            {
+                DepartmentName = specialtyDto.SpecialtyName,
+            };
+            await _db.Departments.AddAsync(department);
+            _db.SaveChanges();
+            return Ok(new { Message = "new Specialty created successfully", Id = department.Id });
+        }
+
+
 
         [HttpGet("GetAllAppointments")]
         public async Task<IActionResult> GetAllAppointments()
@@ -202,6 +215,27 @@ namespace HEALTH_SYC.Controllers
                     GovernorateName= currentGovernorateName,
                 };
                 list.Add(regionDto);
+
+            }
+            return Ok(list);
+        }
+
+        [HttpGet("GetAllSpecilties")]
+        public async Task<IActionResult> GetAllSpecilties()
+        {
+            var specilties = await _db.Departments.ToListAsync();
+
+            var list = new List<SpecialtyDto>();
+
+            foreach (var specilty in specilties)
+            {
+
+                SpecialtyDto specialtyDto = new SpecialtyDto()
+                {
+                    Id = specilty.Id,
+                    SpecialtyName = specilty.DepartmentName,
+                };
+                list.Add(specialtyDto);
 
             }
             return Ok(list);
