@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tmHy09iFuzOrdw1UIB39qWZAca+5bax5c1QWxjJ68dBic3fcHDBsfXu4PMZYuSA1yY71d+NsG39IR9PeHRtm1A==",
+  "dgSpecHash": "bVEUDtFr/aIUQpYvKmZ3ZR3k5cj2/xp2ZmQi3z7G9OUmsgTFVSAVCYj8aW21bK8fwpdPnOdjdKxn71azKnGGRw==",
   "success": true,
-  "projectFilePath": "C:\\GP\\HEALTH_SYC\\HEALTH_SYC.csproj",
+  "projectFilePath": "C:\\GP\\HEALTH_SYC_AI\\Back_end\\HEALTH_SYC\\HEALTH_SYC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\h\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\h\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

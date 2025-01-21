@@ -1,22 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\GP\\HEALTH_SYC\\",
+  "WorkspaceRootPath": "C:\\GP\\HEALTH_SYC_AI\\Back_end\\HEALTH_SYC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|c:\\gp\\health_syc\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|c:\\gp\\health_syc_ai\\back_end\\health_syc\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|C:\\GP\\HEALTH_SYC\\dtos\\regiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|solutionrelative:dtos\\regiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|C:\\GP\\HEALTH_SYC_AI\\Back_end\\HEALTH_SYC\\dtos\\specialtydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|solutionrelative:dtos\\specialtydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|c:\\gp\\health_syc\\dtos\\governoratedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|solutionrelative:dtos\\governoratedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|C:\\GP\\HEALTH_SYC\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|C:\\GP\\HEALTH_SYC_AI\\Back_end\\HEALTH_SYC\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|solutionrelative:models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,62 +22,52 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "GovernorateDto.cs",
-              "DocumentMoniker": "C:\\GP\\HEALTH_SYC\\DTOs\\GovernorateDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\GovernorateDto.cs",
-              "ToolTip": "C:\\GP\\HEALTH_SYC\\DTOs\\GovernorateDto.cs",
-              "RelativeToolTip": "DTOs\\GovernorateDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Title": "Department.cs",
+              "DocumentMoniker": "C:\\GP\\HEALTH_SYC_AI\\Back_end\\HEALTH_SYC\\Models\\Department.cs",
+              "RelativeDocumentMoniker": "Models\\Department.cs",
+              "ToolTip": "C:\\GP\\HEALTH_SYC_AI\\Back_end\\HEALTH_SYC\\Models\\Department.cs",
+              "RelativeToolTip": "Models\\Department.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T04:44:25.863Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-20T20:37:01.011Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "RegionDto.cs",
-              "DocumentMoniker": "C:\\GP\\HEALTH_SYC\\DTOs\\RegionDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\RegionDto.cs",
-              "ToolTip": "C:\\GP\\HEALTH_SYC\\DTOs\\RegionDto.cs",
-              "RelativeToolTip": "DTOs\\RegionDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAcAAAA",
+              "Title": "SpecialtyDto.cs",
+              "DocumentMoniker": "C:\\GP\\HEALTH_SYC_AI\\Back_end\\HEALTH_SYC\\DTOs\\SpecialtyDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\SpecialtyDto.cs",
+              "ToolTip": "C:\\GP\\HEALTH_SYC_AI\\Back_end\\HEALTH_SYC\\DTOs\\SpecialtyDto.cs",
+              "RelativeToolTip": "DTOs\\SpecialtyDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T22:12:31.789Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-20T20:36:21.053Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\GP\\HEALTH_SYC\\Controllers\\AdminController.cs",
+              "DocumentMoniker": "C:\\GP\\HEALTH_SYC_AI\\Back_end\\HEALTH_SYC\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
-              "ToolTip": "C:\\GP\\HEALTH_SYC\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\GP\\HEALTH_SYC_AI\\Back_end\\HEALTH_SYC\\Controllers\\AdminController.cs",
               "RelativeToolTip": "Controllers\\AdminController.cs",
-              "ViewState": "AQIAALUAAAAAAAAAAEBBwMMAAAARAAAA",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAuwEoAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-19T18:48:37.263Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\GP\\HEALTH_SYC\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\GP\\HEALTH_SYC\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAuwDgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T22:21:35.824Z"
             }
           ]
         }
