@@ -24,5 +24,6 @@ namespace HEALTH_SYC.Models
         public DbSet<Treatment> Treatments { get; set; }
         public DbSet<Region> Regions { get; set; }
         public DbSet<Governorate> Governorates { get; set; }
+        public DbSet<Complain> Complains { get; set; }
     }
 }
