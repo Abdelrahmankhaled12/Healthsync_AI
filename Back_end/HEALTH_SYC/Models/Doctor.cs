@@ -16,5 +16,8 @@ namespace HEALTH_SYC.Models
        
         [ForeignKey("Department")]
         public int DepartmentId { get; set; }
+        public string ConfirmationToken { get; set; }  // Token for email confirmation
+        public bool IsConfirmed { get; set; } = false; // Indicates if the email is confirmed
+
     }
 }

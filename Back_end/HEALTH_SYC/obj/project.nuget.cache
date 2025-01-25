@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "VswjGR+FXC8VXrwJbIDDp/sgTl/IHEPYa6M3RDdgUCoPK3NZMD2nFGNAOEjv2iHiUNe1+lcinWIAPOP+O/JFCA==",
+  "dgSpecHash": "h6f9xZkJBmsVNk+cZav7Wtiy0aOHtM8I8c003P6H7xN+5Jy1rI1HrkptyAGUmUShcnJ6H2AbRxtLQ+IEs3itYA==",
   "success": true,
   "projectFilePath": "C:\\GP\\Healthsync_AI\\Back_end\\HEALTH_SYC\\HEALTH_SYC.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\Access\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\Access\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\Access\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\Access\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.0\\microsoft.aspnetcore.authentication.jwtbearer.6.0.0.nupkg.sha512",
     "C:\\Users\\Access\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\Access\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",
     "C:\\Users\\Access\\.nuget\\packages\\microsoft.codeanalysis.common\\4.5.0\\microsoft.codeanalysis.common.4.5.0.nupkg.sha512",
