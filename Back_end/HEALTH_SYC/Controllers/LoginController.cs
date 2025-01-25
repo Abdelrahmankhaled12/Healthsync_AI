@@ -1,5 +1,5 @@
-﻿using HEALTH_SYC.Models; 
-using Login.Models; 
+﻿using HEALTH_SYC.Models;
+using Login.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -45,19 +45,28 @@ namespace Login.Controllers
                 // Verify password and return a JWT token if valid
                 if (admin != null && BCrypt.Net.BCrypt.Verify(request.Password, admin.Password))
                 {
-                    string token = CreateToken(admin.Name, "Admin");
+                    string token = CreateToken(admin.Name, "Admin", admin.Email);
                     return Ok(new LoginResult { Token = token, RoleType = "Admin", Id = admin.Id });
                 }
 
-                if (doctor != null && BCrypt.Net.BCrypt.Verify(request.Password, doctor.Password))
+                if (doctor != null)
                 {
-                    string token = CreateToken(doctor.Name, "Doctor");
-                    return Ok(new LoginResult { Token = token, RoleType = "Doctor", Id = doctor.Id });
+                    if (BCrypt.Net.BCrypt.Verify(request.Password, doctor.Password))
+                    {
+                        // Check if the doctor is confirmed
+                        if (!doctor.IsConfirmed)
+                        {
+                            return BadRequest("Doctor's email not confirmed yet.");
+                        }
+
+                        string token = CreateToken(doctor.Name, "Doctor", doctor.Email);
+                        return Ok(new LoginResult { Token = token, RoleType = "Doctor", Id = doctor.Id });
+                    }
                 }
 
                 if (patient != null && BCrypt.Net.BCrypt.Verify(request.Password, patient.Password))
                 {
-                    string token = CreateToken(patient.Name, "Patient");
+                    string token = CreateToken(patient.Name, "Patient", patient.Email);
                     return Ok(new LoginResult { Token = token, RoleType = "Patient", Id = patient.Id });
                 }
 
@@ -69,13 +78,14 @@ namespace Login.Controllers
             }
         }
 
-        private string CreateToken(string username, string role)
+        private string CreateToken(string username, string role, string email)
         {
             // Define claims for the token
             var claims = new List<Claim>
             {
                 new Claim(ClaimTypes.Name, username),
-                new Claim(ClaimTypes.Role, role)
+                new Claim(ClaimTypes.Role, role),
+                new Claim(ClaimTypes.Email, email)  // Add email claim
             };
 
             // Get the secret key from appsettings.json
