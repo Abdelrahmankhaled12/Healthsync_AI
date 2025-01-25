@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\GP\\HEALTH_SYC_AI\\Back_end\\HEALTH_SYC\\HEALTH_SYC.csproj": {}
+    "C:\\GP\\Healthsync_AI\\Back_end\\HEALTH_SYC\\HEALTH_SYC.csproj": {}
   },
   "projects": {
-    "C:\\GP\\HEALTH_SYC_AI\\Back_end\\HEALTH_SYC\\HEALTH_SYC.csproj": {
+    "C:\\GP\\Healthsync_AI\\Back_end\\HEALTH_SYC\\HEALTH_SYC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GP\\HEALTH_SYC_AI\\Back_end\\HEALTH_SYC\\HEALTH_SYC.csproj",
+        "projectUniqueName": "C:\\GP\\Healthsync_AI\\Back_end\\HEALTH_SYC\\HEALTH_SYC.csproj",
         "projectName": "HEALTH_SYC",
-        "projectPath": "C:\\GP\\HEALTH_SYC_AI\\Back_end\\HEALTH_SYC\\HEALTH_SYC.csproj",
-        "packagesPath": "C:\\Users\\h\\.nuget\\packages\\",
-        "outputPath": "C:\\GP\\HEALTH_SYC_AI\\Back_end\\HEALTH_SYC\\obj\\",
+        "projectPath": "C:\\GP\\Healthsync_AI\\Back_end\\HEALTH_SYC\\HEALTH_SYC.csproj",
+        "packagesPath": "C:\\Users\\Access\\.nuget\\packages\\",
+        "outputPath": "C:\\GP\\Healthsync_AI\\Back_end\\HEALTH_SYC\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\h\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Access\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -92,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "M:\\Programs\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

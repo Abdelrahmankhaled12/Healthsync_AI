@@ -591,3 +591,16 @@ C:\GP\HEALTH_SYC_AI\Back_end\HEALTH_SYC\obj\Debug\net8.0\scopedcss\projectbundle
 C:\GP\HEALTH_SYC_AI\Back_end\HEALTH_SYC\obj\Debug\net8.0\HEALTH_SYC.csproj.Up2Date
 C:\GP\HEALTH_SYC_AI\Back_end\HEALTH_SYC\obj\Debug\net8.0\HEALTH_SYC.genruntimeconfig.cache
 C:\GP\HEALTH_SYC_AI\Back_end\HEALTH_SYC\obj\Debug\net8.0\ref\HEALTH_SYC.dll
+C:\GP\Healthsync_AI\Back_end\HEALTH_SYC\obj\Debug\net8.0\HEALTH_SYC.csproj.AssemblyReference.cache
+C:\GP\Healthsync_AI\Back_end\HEALTH_SYC\obj\Debug\net8.0\HEALTH_SYC.GeneratedMSBuildEditorConfig.editorconfig
+C:\GP\Healthsync_AI\Back_end\HEALTH_SYC\obj\Debug\net8.0\HEALTH_SYC.AssemblyInfoInputs.cache
+C:\GP\Healthsync_AI\Back_end\HEALTH_SYC\obj\Debug\net8.0\HEALTH_SYC.AssemblyInfo.cs
+C:\GP\Healthsync_AI\Back_end\HEALTH_SYC\obj\Debug\net8.0\HEALTH_SYC.csproj.CoreCompileInputs.cache
+C:\GP\Healthsync_AI\Back_end\HEALTH_SYC\obj\Debug\net8.0\HEALTH_SYC.MvcApplicationPartsAssemblyInfo.cs
+C:\GP\Healthsync_AI\Back_end\HEALTH_SYC\obj\Debug\net8.0\HEALTH_SYC.MvcApplicationPartsAssemblyInfo.cache
+C:\GP\Healthsync_AI\Back_end\HEALTH_SYC\obj\Debug\net8.0\HEALTH_SYC.RazorAssemblyInfo.cache
+C:\GP\Healthsync_AI\Back_end\HEALTH_SYC\obj\Debug\net8.0\HEALTH_SYC.RazorAssemblyInfo.cs
+C:\GP\Healthsync_AI\Back_end\HEALTH_SYC\obj\Debug\net8.0\HEALTH_SYC.sourcelink.json
+C:\GP\Healthsync_AI\Back_end\HEALTH_SYC\obj\Debug\net8.0\HEALTH_SYC.dll
+C:\GP\Healthsync_AI\Back_end\HEALTH_SYC\obj\Debug\net8.0\refint\HEALTH_SYC.dll
+C:\GP\Healthsync_AI\Back_end\HEALTH_SYC\obj\Debug\net8.0\HEALTH_SYC.pdb

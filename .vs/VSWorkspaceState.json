@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Back_end",
+    "\\Back_end\\HEALTH_SYC",
+    "\\Back_end\\HEALTH_SYC\\Controllers",
+    "\\Back_end\\HEALTH_SYC\\Models",
+    "\\Back_end\\HEALTH_SYC\\Properties"
   ],
-  "SelectedNode": "\\HEALTH_SYC.sln (Back_end\\HEALTH_SYC\\HEALTH_SYC.sln)",
+  "SelectedNode": "\\Back_end",
   "PreviewInSolutionExplorer": false
 }

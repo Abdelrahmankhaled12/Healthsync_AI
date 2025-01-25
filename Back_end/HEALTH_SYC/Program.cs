@@ -1,6 +1,10 @@
 using HEALTH_SYC.Models;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
-// first commit
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
+using System.Text;
+
 namespace HEALTH_SYC
 {
     public class Program
@@ -11,7 +15,31 @@ namespace HEALTH_SYC
 
             // Add Swagger services
             builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
+            builder.Services.AddSwaggerGen(options =>
+            {
+                options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                {
+                    Description = "JWT Authorization header using the Bearer scheme. Example: \"Authorization: Bearer {token}\"",
+                    Name = "Authorization",
+                    In = ParameterLocation.Header,
+                    Type = SecuritySchemeType.ApiKey
+                });
+
+                options.AddSecurityRequirement(new OpenApiSecurityRequirement
+                {
+                    {
+                        new OpenApiSecurityScheme
+                        {
+                            Reference = new OpenApiReference
+                            {
+                                Type = ReferenceType.SecurityScheme,
+                                Id = "Bearer"
+                            }
+                        },
+                        new string[] { }
+                    }
+                });
+            });
 
             // Configure DbContext
             builder.Services.AddDbContext<AppDbContext>(op =>
@@ -19,6 +47,25 @@ namespace HEALTH_SYC
 
             // Add services to the container
             builder.Services.AddControllersWithViews();
+
+            // Add Authentication and JWT Bearer Token
+            builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(options =>
+                {
+                    options.RequireHttpsMetadata = false; // Optional, set true for production
+                    options.SaveToken = true;
+                    options.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        ValidateIssuer = false,
+                        ValidateAudience = false,
+                        ValidateLifetime = true,
+                        ClockSkew = TimeSpan.Zero,
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JwtSettings:Secret"]))
+                    };
+                });
+
+            // Add Authorization services
+            builder.Services.AddAuthorization();
 
             var app = builder.Build();
 
@@ -44,6 +91,7 @@ namespace HEALTH_SYC
 
             app.UseRouting();
 
+            app.UseAuthentication(); // Add authentication middleware
             app.UseAuthorization();
 
             app.MapControllerRoute(
