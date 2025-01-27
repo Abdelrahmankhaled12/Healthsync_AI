@@ -40,18 +40,17 @@ namespace HEALTH_SYC.Controllers
                 {
                     return Unauthorized("Doctor does not exist.");
                 }
-
-                // Fetch bookings related to the logged-in doctor
-                var bookings = await _db.Bookings
+                // Fetch all bookings for the logged-in doctor
+                var bookings = await _db.Appointments
                     .Where(b => b.DoctorId == doctor.Id)
                     .Select(b => new
                     {
                         BookingId = b.Id,
-                        PatientName = b.Patient.Name,
+                        PatientName = b.Patient.Name, 
                         PatientContact = b.Patient.Phone,
-                        AppointmentDate = b.AppointmentDate,
-                        AppointmentTime = b.AppointmentTime,
-                        Status = b.Status
+                        AppointmentDate = b.Date,
+                        Status = b.Status,
+                        Notes = b.Notes
                     })
                     .ToListAsync();
 
