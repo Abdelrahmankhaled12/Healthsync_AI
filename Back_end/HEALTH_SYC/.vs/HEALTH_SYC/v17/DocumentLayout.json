@@ -11,6 +11,10 @@
       "RelativeMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|solutionrelative:controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|c:\\gp\\healthsync_ai\\back_end\\health_syc\\dtos\\bookingactiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|solutionrelative:dtos\\bookingactiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|c:\\gp\\healthsync_ai\\back_end\\health_syc\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|solutionrelative:models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -38,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,7 +54,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
+              "Title": "BookingActionDto.cs",
+              "DocumentMoniker": "C:\\GP\\Healthsync_AI\\Back_end\\HEALTH_SYC\\DTOs\\BookingActionDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\BookingActionDto.cs",
+              "ToolTip": "C:\\GP\\Healthsync_AI\\Back_end\\HEALTH_SYC\\DTOs\\BookingActionDto.cs",
+              "RelativeToolTip": "DTOs\\BookingActionDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T20:30:22.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "20250127200718_init.cs",
               "DocumentMoniker": "C:\\GP\\Healthsync_AI\\Back_end\\HEALTH_SYC\\Migrations\\20250127200718_init.cs",
               "RelativeDocumentMoniker": "Migrations\\20250127200718_init.cs",
@@ -62,7 +79,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\GP\\Healthsync_AI\\Back_end\\HEALTH_SYC\\Models\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Models\\AppDbContext.cs",
@@ -74,7 +91,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "RatingController.cs",
               "DocumentMoniker": "C:\\GP\\Healthsync_AI\\Back_end\\HEALTH_SYC\\Controllers\\RatingController.cs",
               "RelativeDocumentMoniker": "Controllers\\RatingController.cs",
@@ -92,7 +109,7 @@
               "RelativeDocumentMoniker": "Models\\Appointment.cs",
               "ToolTip": "C:\\GP\\Healthsync_AI\\Back_end\\HEALTH_SYC\\Models\\Appointment.cs",
               "RelativeToolTip": "Models\\Appointment.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAuAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAA3wBUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-27T19:50:22.328Z",
               "EditorCaption": ""
@@ -105,14 +122,14 @@
               "RelativeDocumentMoniker": "Controllers\\DoctorController.cs",
               "ToolTip": "C:\\GP\\Healthsync_AI\\Back_end\\HEALTH_SYC\\Controllers\\DoctorController.cs",
               "RelativeToolTip": "Controllers\\DoctorController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAA2AAAA",
+              "ViewState": "AQIAAHoAAAAAAAAAAAAgwEcAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-27T19:01:15.142Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Doctor.cs",
               "DocumentMoniker": "C:\\GP\\Healthsync_AI\\Back_end\\HEALTH_SYC\\Models\\Doctor.cs",
               "RelativeDocumentMoniker": "Models\\Doctor.cs",
@@ -124,7 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\GP\\Healthsync_AI\\Back_end\\HEALTH_SYC\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "Controllers\\AdminController.cs",

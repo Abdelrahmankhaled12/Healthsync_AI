@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HEALTH_SYC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2b301e1003e5e3f88ba733f9a3899fa093e030e9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5d01f1208365cf8f09e9e77ec53fab956a6e5c00")]
 [assembly: System.Reflection.AssemblyProductAttribute("HEALTH_SYC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HEALTH_SYC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
