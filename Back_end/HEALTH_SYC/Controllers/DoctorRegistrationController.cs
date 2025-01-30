@@ -56,7 +56,7 @@ namespace Login.Controllers
                 string passwordHash = BCrypt.Net.BCrypt.HashPassword(request.Password);
 
                 // Generate confirmation token
-                string confirmationToken = GenerateConfirmationToken(request.Username);
+                string confirmationToken = GenerateConfirmationToken(request.Username, "Doctor");
 
                 // Create a new doctor record
                 var newDoctor = new Doctor
@@ -68,7 +68,8 @@ namespace Login.Controllers
                     RegionId = request.RegionId,
                     DepartmentId = request.DepartmentId,
                     ConfirmationToken = confirmationToken,
-                    IsConfirmed = false
+                    IsConfirmed = false,
+                    Role = "Doctor" // Set the role to "Doctor"
                 };
 
                 // Save the new doctor to the database
@@ -100,7 +101,7 @@ namespace Login.Controllers
         }
 
         // Generate confirmation token (JWT)
-        private string GenerateConfirmationToken(string username)
+        private string GenerateConfirmationToken(string username, string role)
         {
             var secretKey = _configuration["JwtSettings:Secret"];
             if (string.IsNullOrEmpty(secretKey))
@@ -114,6 +115,7 @@ namespace Login.Controllers
             var claims = new[]
             {
                 new Claim("username", username),
+                new Claim("role", role),  // Add role as claim here
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
             };
 
@@ -147,12 +149,12 @@ namespace Login.Controllers
                     Subject = "Email Confirmation",
                     IsBodyHtml = true,
                     Body = $@"
-                        <div style='font-family: Arial, sans-serif; text-align: center;'>
+                        <div style='font-family: Arial, sans-serif; text-align: center;' >
                             <img src='https://i.imgur.com/JiImrrK.jpeg' alt='HEALTH_SYC Logo' style='max-width: 150px; margin-bottom: 20px;' />
                             <h2>Welcome to HEALTH_SYC, {username}!</h2>
                             <p>Thank you for registering. Please confirm your email to activate your account.</p>
                             <a href='http://localhost:5000/api/DoctorRegistration/confirm?token={confirmationToken}' 
-                               style='background-color: #28a745; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;'>
+                               style='background-color: #28a745; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;' >
                                 Click here to confirm your email
                             </a>
                             <br /><br />
@@ -212,7 +214,7 @@ namespace Login.Controllers
             }
         }
 
-        // Decode token
+        // Decode token and extract username
         private string DecodeToken(string token)
         {
             try
@@ -230,7 +232,9 @@ namespace Login.Controllers
                 };
 
                 var principal = tokenHandler.ValidateToken(token, validations, out _);
-                return principal.FindFirst("username")?.Value;
+                var username = principal.FindFirst("username")?.Value;  // Extract username from token
+
+                return username;
             }
             catch
             {

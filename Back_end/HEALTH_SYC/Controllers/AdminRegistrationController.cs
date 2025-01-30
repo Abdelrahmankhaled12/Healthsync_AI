@@ -36,29 +36,39 @@ namespace Login.Controllers
                     return BadRequest("Password must be at least 8 characters long, contain at least one uppercase letter, and one special character.");
                 }
 
+                // Check if the email already exists
                 var existingEmail = await _db.Admins.AnyAsync(a => a.Email == request.Email);
                 if (existingEmail)
                 {
                     return BadRequest("Email already exists.");
                 }
 
+                // Hash password
                 string passwordHash = BCrypt.Net.BCrypt.HashPassword(request.Password);
 
+                // Create a new admin
                 var newAdmin = new Admin
                 {
                     Name = request.Username,
                     Email = request.Email,
-                    Password = passwordHash
+                    Password = passwordHash,
+                    Role = "Admin",  // Set role as Admin
+                    IsConfirmed = false,  // Set to false until confirmed, if needed
+                    ConfirmationToken = Guid.NewGuid().ToString() // Optional: If you're using confirmation token
                 };
 
+                // Add to database
                 _db.Admins.Add(newAdmin);
                 await _db.SaveChangesAsync();
+
+                // Optionally, send a confirmation email here, like we did in the other controllers
 
                 return Ok("Admin registered successfully.");
             }
             catch (Exception ex)
             {
-                return StatusCode(500, $"Error: {ex.Message}");
+                // Improved error handling with status code
+                return StatusCode(500, $"Internal Server Error: {ex.Message}");
             }
         }
 

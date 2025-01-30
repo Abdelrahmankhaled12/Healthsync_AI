@@ -2,9 +2,14 @@
 using Login.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
+using Microsoft.IdentityModel.Tokens;
 
 namespace Login.Controllers
 {
@@ -13,10 +18,12 @@ namespace Login.Controllers
     public class PatientRegistrationController : ControllerBase
     {
         private readonly AppDbContext _db;
+        private readonly IConfiguration _configuration;
 
-        public PatientRegistrationController(AppDbContext db)
+        public PatientRegistrationController(AppDbContext db, IConfiguration configuration)
         {
             _db = db;
+            _configuration = configuration;
         }
 
         [HttpPost("register")]
@@ -49,7 +56,9 @@ namespace Login.Controllers
                 }
 
                 // Check if email already exists
-                var existingEmail = await _db.Patients.AnyAsync(p => p.Email == request.Email);
+                var existingEmail = await _db.Patients
+                    .AsNoTracking()
+                    .AnyAsync(p => p.Email == request.Email);
                 if (existingEmail)
                 {
                     return BadRequest("Email already exists.");
@@ -65,26 +74,32 @@ namespace Login.Controllers
                     Email = request.Email,
                     Password = passwordHash,
                     Phone = request.Phone,
-                    Adress = request.Address,
-                    Age = request.Age
+                    Address = request.Address,
+                    Age = request.Age,
+                    Role = "Patient"  // Set role for the patient
                 };
 
                 // Save to database
                 _db.Patients.Add(newPatient);
                 await _db.SaveChangesAsync();
 
-                return Ok("Patient registered successfully.");
+                // Create JWT token for the registered patient
+                var token = CreateToken(newPatient.Email, "Patient");
+
+                // Return response with Patient ID and token
+                return Ok(new { Message = "Patient registered successfully.", PatientId = newPatient.Id, Token = token });
             }
             catch (Exception ex)
             {
-                return StatusCode(500, $"Error: {ex.Message}");
+                return StatusCode(500, $"An error occurred: {ex.Message}");
             }
         }
 
         // Email validation
         private bool IsValidEmail(string email)
         {
-            return email.Contains("@");
+            var emailPattern = @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
+            return Regex.IsMatch(email, emailPattern);
         }
 
         // Password validation
@@ -99,13 +114,34 @@ namespace Login.Controllers
         // Phone number validation
         private bool IsValidPhone(string phone)
         {
-            return Regex.IsMatch(phone, @"^\+?\d{7,}$");
+            return Regex.IsMatch(phone, @"^\+?[0-9]{7,15}$");
         }
 
         // Age validation
         private bool IsValidAge(int age)
         {
             return age > 0 && age < 120;
+        }
+
+        // Method to create JWT token
+        private string CreateToken(string email, string role)
+        {
+            var claims = new[]
+            {
+                new Claim(ClaimTypes.Email, email),
+                new Claim(ClaimTypes.Role, role)
+            };
+
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JwtSettings:Secret"]));
+            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+
+            var token = new JwtSecurityToken(
+                claims: claims,
+                expires: DateTime.Now.AddDays(1),
+                signingCredentials: creds
+            );
+
+            return new JwtSecurityTokenHandler().WriteToken(token);
         }
     }
 }

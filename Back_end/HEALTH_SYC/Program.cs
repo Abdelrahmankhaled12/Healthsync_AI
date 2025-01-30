@@ -60,7 +60,9 @@ namespace HEALTH_SYC
                         ValidateAudience = false,
                         ValidateLifetime = true,
                         ClockSkew = TimeSpan.Zero,
-                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JwtSettings:Secret"]))
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JwtSettings:Secret"])),
+                        ValidIssuer = "HEALTH_SYC",
+                        ValidAudience = "HEALTH_SYC"
                     };
                 });
 

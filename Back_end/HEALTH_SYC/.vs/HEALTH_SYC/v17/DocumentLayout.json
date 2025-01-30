@@ -3,36 +3,20 @@
   "WorkspaceRootPath": "C:\\GP\\Healthsync_AI\\Back_end\\HEALTH_SYC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|c:\\gp\\healthsync_ai\\back_end\\health_syc\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|solutionrelative:models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|c:\\gp\\healthsync_ai\\back_end\\health_syc\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|solutionrelative:controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|c:\\gp\\healthsync_ai\\back_end\\health_syc\\dtos\\bookingactiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|solutionrelative:dtos\\bookingactiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|c:\\gp\\healthsync_ai\\back_end\\health_syc\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|solutionrelative:models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|c:\\gp\\healthsync_ai\\back_end\\health_syc\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|c:\\gp\\healthsync_ai\\back_end\\health_syc\\controllers\\ratingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|solutionrelative:controllers\\ratingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|c:\\gp\\healthsync_ai\\back_end\\health_syc\\dtos\\patientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|solutionrelative:dtos\\patientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|c:\\gp\\healthsync_ai\\back_end\\health_syc\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|solutionrelative:models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|c:\\gp\\healthsync_ai\\back_end\\health_syc\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|solutionrelative:models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|c:\\gp\\healthsync_ai\\back_end\\health_syc\\migrations\\20250127200718_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|solutionrelative:migrations\\20250127200718_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|c:\\gp\\healthsync_ai\\back_end\\health_syc\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D33FCF5-A136-494D-AE33-C18783FFD48E}|HEALTH_SYC.csproj|solutionrelative:controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,102 +38,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BookingActionDto.cs",
-              "DocumentMoniker": "C:\\GP\\Healthsync_AI\\Back_end\\HEALTH_SYC\\DTOs\\BookingActionDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\BookingActionDto.cs",
-              "ToolTip": "C:\\GP\\Healthsync_AI\\Back_end\\HEALTH_SYC\\DTOs\\BookingActionDto.cs",
-              "RelativeToolTip": "DTOs\\BookingActionDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "PatientDto.cs",
+              "DocumentMoniker": "C:\\GP\\Healthsync_AI\\Back_end\\HEALTH_SYC\\DTOs\\PatientDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\PatientDto.cs",
+              "ToolTip": "C:\\GP\\Healthsync_AI\\Back_end\\HEALTH_SYC\\DTOs\\PatientDto.cs",
+              "RelativeToolTip": "DTOs\\PatientDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T20:30:22.441Z",
+              "WhenOpened": "2025-01-30T02:37:25.644Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "20250127200718_init.cs",
-              "DocumentMoniker": "C:\\GP\\Healthsync_AI\\Back_end\\HEALTH_SYC\\Migrations\\20250127200718_init.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250127200718_init.cs",
-              "ToolTip": "C:\\GP\\Healthsync_AI\\Back_end\\HEALTH_SYC\\Migrations\\20250127200718_init.cs",
-              "RelativeToolTip": "Migrations\\20250127200718_init.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "C:\\GP\\Healthsync_AI\\Back_end\\HEALTH_SYC\\Models\\Patient.cs",
+              "RelativeDocumentMoniker": "Models\\Patient.cs",
+              "ToolTip": "C:\\GP\\Healthsync_AI\\Back_end\\HEALTH_SYC\\Models\\Patient.cs",
+              "RelativeToolTip": "Models\\Patient.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-27T20:07:18.797Z"
+              "WhenOpened": "2025-01-30T02:36:26.4Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\GP\\Healthsync_AI\\Back_end\\HEALTH_SYC\\Models\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Models\\AppDbContext.cs",
-              "ToolTip": "C:\\GP\\Healthsync_AI\\Back_end\\HEALTH_SYC\\Models\\AppDbContext.cs",
-              "RelativeToolTip": "Models\\AppDbContext.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAzwBoAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-27T20:03:31.394Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RatingController.cs",
-              "DocumentMoniker": "C:\\GP\\Healthsync_AI\\Back_end\\HEALTH_SYC\\Controllers\\RatingController.cs",
-              "RelativeDocumentMoniker": "Controllers\\RatingController.cs",
-              "ToolTip": "C:\\GP\\Healthsync_AI\\Back_end\\HEALTH_SYC\\Controllers\\RatingController.cs",
-              "RelativeToolTip": "Controllers\\RatingController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-27T19:58:56.282Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Appointment.cs",
-              "DocumentMoniker": "C:\\GP\\Healthsync_AI\\Back_end\\HEALTH_SYC\\Models\\Appointment.cs",
-              "RelativeDocumentMoniker": "Models\\Appointment.cs",
-              "ToolTip": "C:\\GP\\Healthsync_AI\\Back_end\\HEALTH_SYC\\Models\\Appointment.cs",
-              "RelativeToolTip": "Models\\Appointment.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAA3wBUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-27T19:50:22.328Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "DoctorController.cs",
               "DocumentMoniker": "C:\\GP\\Healthsync_AI\\Back_end\\HEALTH_SYC\\Controllers\\DoctorController.cs",
               "RelativeDocumentMoniker": "Controllers\\DoctorController.cs",
               "ToolTip": "C:\\GP\\Healthsync_AI\\Back_end\\HEALTH_SYC\\Controllers\\DoctorController.cs",
               "RelativeToolTip": "Controllers\\DoctorController.cs",
-              "ViewState": "AQIAAHoAAAAAAAAAAAAgwEcAAAAKAAAA",
+              "ViewState": "AQIAAIQAAAAAAAAAAAAmwJ0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-27T19:01:15.142Z",
+              "WhenOpened": "2025-01-30T01:45:05.037Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Doctor.cs",
-              "DocumentMoniker": "C:\\GP\\Healthsync_AI\\Back_end\\HEALTH_SYC\\Models\\Doctor.cs",
-              "RelativeDocumentMoniker": "Models\\Doctor.cs",
-              "ToolTip": "C:\\GP\\Healthsync_AI\\Back_end\\HEALTH_SYC\\Models\\Doctor.cs",
-              "RelativeToolTip": "Models\\Doctor.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-27T19:00:27.362Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\GP\\Healthsync_AI\\Back_end\\HEALTH_SYC\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
               "ToolTip": "C:\\GP\\Healthsync_AI\\Back_end\\HEALTH_SYC\\Controllers\\AdminController.cs",
               "RelativeToolTip": "Controllers\\AdminController.cs",
-              "ViewState": "AQIAAFcAAAAAAAAAAAAcwGgAAAAJAAAA",
+              "ViewState": "AQIAADQBAAAAAAAAAAAqwEUBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-27T18:55:38.425Z"
+              "WhenOpened": "2025-01-30T01:44:58.145Z",
+              "EditorCaption": ""
             }
           ]
         }

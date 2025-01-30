@@ -27,11 +27,13 @@ namespace HEALTH_SYC.Controllers
         {
             try
             {
-                // Get the logged-in doctor's email from the JWT token
+                // Get the logged-in doctor's email and role from the JWT token
                 var doctorEmail = User.FindFirst(ClaimTypes.Email)?.Value;
-                if (string.IsNullOrEmpty(doctorEmail))
+                var userRole = User.FindFirst(ClaimTypes.Role)?.Value;
+
+                if (string.IsNullOrEmpty(doctorEmail) || userRole != "Doctor")
                 {
-                    return Unauthorized("Doctor is not logged in.");
+                    return Unauthorized("Doctor is not logged in or does not have the correct role.");
                 }
 
                 // Verify if the doctor exists in the database
@@ -75,11 +77,13 @@ namespace HEALTH_SYC.Controllers
         {
             try
             {
-                // Get the logged-in doctor's email
+                // Get the logged-in doctor's email and role
                 var doctorEmail = User.FindFirst(ClaimTypes.Email)?.Value;
-                if (string.IsNullOrEmpty(doctorEmail))
+                var userRole = User.FindFirst(ClaimTypes.Role)?.Value;
+
+                if (string.IsNullOrEmpty(doctorEmail) || userRole != "Doctor")
                 {
-                    return Unauthorized("Doctor is not logged in.");
+                    return Unauthorized("Doctor is not logged in or does not have the correct role.");
                 }
 
                 // Verify if the doctor exists in the database
@@ -139,7 +143,7 @@ namespace HEALTH_SYC.Controllers
                 booking.UpdatedAt = DateTime.Now;
                 await _db.SaveChangesAsync();
 
-                // Send notification to patient (Simulated with Console.WriteLine)
+                // Send notification to patient (Simulated with logging)
                 Console.WriteLine($"Notification: Booking {booking.Id} updated to {booking.Status}");
 
                 return Ok(new { Message = "Booking status updated successfully", NewStatus = booking.Status });

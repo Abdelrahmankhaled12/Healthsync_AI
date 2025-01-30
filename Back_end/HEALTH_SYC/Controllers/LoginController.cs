@@ -31,12 +31,10 @@ namespace Login.Controllers
         {
             try
             {
-                // Search for the user in Admins, Doctors, and Patients tables
                 var admin = await _db.Admins.FirstOrDefaultAsync(a => a.Email == request.Email);
                 var doctor = await _db.Doctors.FirstOrDefaultAsync(d => d.Email == request.Email);
                 var patient = await _db.Patients.FirstOrDefaultAsync(p => p.Email == request.Email);
 
-                // Check if the user exists in any of the tables
                 if (admin == null && doctor == null && patient == null)
                 {
                     return BadRequest("Email not found.");
@@ -49,25 +47,29 @@ namespace Login.Controllers
                     return Ok(new LoginResult { Token = token, RoleType = "Admin", Id = admin.Id });
                 }
 
-                if (doctor != null)
+                if (doctor != null && BCrypt.Net.BCrypt.Verify(request.Password, doctor.Password))
                 {
-                    if (BCrypt.Net.BCrypt.Verify(request.Password, doctor.Password))
+                    if (!doctor.IsConfirmed)
                     {
-                        // Check if the doctor is confirmed
-                        if (!doctor.IsConfirmed)
-                        {
-                            return BadRequest("Doctor's email not confirmed yet.");
-                        }
-
-                        string token = CreateToken(doctor.Name, "Doctor", doctor.Email);
-                        return Ok(new LoginResult { Token = token, RoleType = "Doctor", Id = doctor.Id });
+                        return BadRequest("Doctor's email not confirmed yet.");
                     }
+
+                    string token = CreateToken(doctor.Name, "Doctor", doctor.Email);
+                    return Ok(new LoginResult { Token = token, RoleType = "Doctor", Id = doctor.Id });
                 }
 
-                if (patient != null && BCrypt.Net.BCrypt.Verify(request.Password, patient.Password))
+                if (patient != null)
                 {
-                    string token = CreateToken(patient.Name, "Patient", patient.Email);
-                    return Ok(new LoginResult { Token = token, RoleType = "Patient", Id = patient.Id });
+                    if (!patient.IsConfirmed)
+                    {
+                        return BadRequest("Patient's email not confirmed yet.");
+                    }
+
+                    if (BCrypt.Net.BCrypt.Verify(request.Password, patient.Password))
+                    {
+                        string token = CreateToken(patient.Name, "Patient", patient.Email);
+                        return Ok(new LoginResult { Token = token, RoleType = "Patient", Id = patient.Id });
+                    }
                 }
 
                 return BadRequest("Incorrect password.");
@@ -77,6 +79,7 @@ namespace Login.Controllers
                 return StatusCode(500, $"An error occurred: {ex.Message}");
             }
         }
+
 
         private string CreateToken(string username, string role, string email)
         {
@@ -95,7 +98,7 @@ namespace Login.Controllers
             // Generate the token
             var token = new JwtSecurityToken(
                 claims: claims,
-                expires: DateTime.Now.AddDays(1),
+                expires: DateTime.Now.AddDays(1),  // Optional: Consider reducing the expiration time for security
                 signingCredentials: creds
             );
 
