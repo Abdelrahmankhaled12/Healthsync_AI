@@ -150,7 +150,7 @@ namespace Login.Controllers
                     IsBodyHtml = true,
                     Body = $@"
                         <div style='font-family: Arial, sans-serif; text-align: center;' >
-                            <img src='https://i.imgur.com/JiImrrK.jpeg' alt='HEALTH_SYC Logo' style='max-width: 150px; margin-bottom: 20px;' />
+                            <img src='https://i.postimg.cc/wvnkWPDR/HEALTH-SYC-Logo-transformed.jpg' alt='HEALTH_SYC Logo' style='max-width: 150px; margin-bottom: 20px;' />
                             <h2>Welcome to HEALTH_SYC, {username}!</h2>
                             <p>Thank you for registering. Please confirm your email to activate your account.</p>
                             <a href='http://localhost:5000/api/DoctorRegistration/confirm?token={confirmationToken}' 
